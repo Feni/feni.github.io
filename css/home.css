@@ -1,0 +1,115 @@
+body {
+    background: #fdf9f3;
+    color: #2c292d;
+
+    --color-red: #ff6188;
+    --color-orange: #fc9867;
+    --color-yellow: #ffd866;
+    --color-green: #a9dc76;
+    --color-cyan: #78dce8;
+    --color-purple: #ab9df2;
+
+    font-family: -apple-system, "Segoe UI", system-ui, Roboto, Ubuntu, 'Helvetica Neue', Oxygen, Cantarell, Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'
+}
+
+h1, h2, h3 {
+}
+
+header {
+    width: 45%;
+    display: inline-block;
+    padding: 80px 0 40px 80px;
+}
+
+header h1 {
+    margin: 0;
+    letter-spacing: 0.05em;
+}
+
+header p {
+    margin: 1.65rem 0;
+}
+#indexWrapper {
+    width: 50%;
+    display: inline-block;
+    height: 100vh;
+    border-left: 1px solid #CCC;
+    float: right;
+    padding: 80px 0;
+    
+}
+
+#indexWrapper ul {
+    padding: 0 80px;
+    list-style-type: none;
+    
+}
+
+
+#index {
+    font-size: 1.333em;
+}
+
+#index a {
+    color: inherit;
+}
+
+#index li {
+    margin-bottom: .5em;
+    
+}
+
+.navlink {
+}
+
+.links-hub a {
+    color: #2c292d;
+    text-decoration: none;
+}
+
+.links-hub a:hover {
+    text-decoration: underline;
+}
+
+.ut-orange {
+    background-color: #BF5700;
+    color: #333F48;
+    color: white;
+}
+
+.section {
+    padding: 40px;
+}
+
+.education h2 {
+    margin: 0;
+}
+
+
+@media only screen and (max-width: 1024px) {
+
+}
+
+
+@media only screen and (max-width: 768px) {
+    header {
+        width: 80%;
+        width: calc(100%-80px);
+        max-width: 100%;
+        padding: 80px 40px 40px 40px;
+    }
+
+    header h1 {
+        
+    }
+    #indexWrapper {
+        width: 100%;
+        border: none;
+        float: none;
+    }
+
+    #indexWrapper ul {
+        padding: 0 40px;
+    }
+}
+
