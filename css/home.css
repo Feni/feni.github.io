@@ -1,5 +1,6 @@
 body {
     background: #fdf9f3;
+    background: #EFE3E3;
     color: #2c292d;
 
     --color-red: #ff6188;
@@ -7,7 +8,7 @@ body {
     --color-yellow: #ffd866;
     --color-green: #a9dc76;
     --color-cyan: #78dce8;
-    --color-purple: #ab9df2;
+    --color-purple: #201363;
 
     font-family: -apple-system, "Segoe UI", system-ui, Roboto, Ubuntu, 'Helvetica Neue', Oxygen, Cantarell, Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'
 }
@@ -16,9 +17,9 @@ h1, h2, h3 {
 }
 
 header {
-    width: 45%;
+    max-width: 600px;
     display: inline-block;
-    padding: 80px 0 40px 80px;
+    padding: 80px 0 80px 100px;
 }
 
 header h1 {
@@ -50,8 +51,13 @@ header p {
     font-size: 1.333em;
 }
 
-#index a {
+a {
     color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 #index li {
@@ -77,8 +83,8 @@ header p {
     color: white;
 }
 
-.section {
-    padding: 40px;
+section {
+    padding: 40px 80px;
 }
 
 .education h2 {
@@ -86,17 +92,104 @@ header p {
 }
 
 
-@media only screen and (max-width: 1024px) {
+h3 {
+    font-size: 1.222em;
+    font-weight: 700;
+}
 
+.half {
+    display: inline-block;
+    width: 49%;
+}
+
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}
+
+.block {
+    display: block;
+    width: 100%;
+}
+
+article {
+    min-height: 200px;
+    display: block;
+    clear: both;
+    margin-bottom: 120px;
+}
+
+.project-img {
+    width: 50%;
+    max-width: 50%;
+}
+
+.project-img img {
+    max-width:100%; 
+    max-height:100%;
+}
+
+.text-block {
+    padding: 0 40px;
+    display: inline-block;
+}
+
+.featured-image img {
+    max-width: 100%;
+    max-width: min(800px, 100%);
+}
+
+.card {
+    width: 26rem;
+    max-width: 100%;;
+    margin: 1rem 0.75rem;
+    background-color: #2c292d;
+    color: #fdf9f3;
+
+    box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1),0 4px 6px -2px rgba(0,0,0,0.05);
+    border-color: #2c292d;
+}
+
+/* .card-body + .card-body {
+    border-top: 1px solid #fdf9f3; 
+} */
+
+.card-img, .card-img-top {
+    border-bottom: 1px solid #fdf9f3;
+}
+
+.card-title {
+    margin-top: 0;
+}
+
+.projects {
+    background-color: #fdf9f3;
+    padding-bottom: 120px;
 }
 
 
+footer {
+    padding: 40px;
+    background: #2c292d;
+    color: #fdf9f3;
+    font-size: 0.85rem;
+}
+
 @media only screen and (max-width: 768px) {
     header {
-        width: 80%;
-        width: calc(100%-80px);
+        max-width: 100%;
         max-width: 100%;
         padding: 80px 40px 40px 40px;
+    }
+
+    .featured-image img {
+        max-width: 100%;
+    }
+
+    .half {
+        width: 100%;
     }
 
     header h1 {
@@ -111,5 +204,10 @@ header p {
     #indexWrapper ul {
         padding: 0 40px;
     }
+
+    section {
+        padding: 20px 25px;
+    }
+    
 }
 

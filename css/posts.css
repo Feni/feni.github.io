@@ -2,3 +2,14 @@ body {
     background-color: white;
     font-family: 'Source Serif Pro', serif;
 }
+
+article {
+    max-width: 36em;
+}
+  
+
+p + p {
+text-indent: 1.5em;
+margin-top: -1em; /* Out of 1.5 */
+}
+  

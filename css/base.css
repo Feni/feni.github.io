@@ -22,10 +22,6 @@ p {
 
 }
 
-p + p {
-  text-indent: 1.5em;
-  margin-top: -1em; /* Out of 1.5 */
-}
 
 h1, h2, h3, h4 {
   margin: 1.414em 0 0.5em;
@@ -46,11 +42,6 @@ h4 {font-size: 1.333em; font-weight: 300;}
 small {
   font-size: 0.75em;
 }
-
-article {
-  max-width: 36em;
-}
-
 .container {
   padding: 80px;
 }
