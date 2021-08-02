@@ -1,6 +1,7 @@
 body {
     background: #fdf9f3;
     background: #EFE3E3;
+    background: rgb(255, 232, 220);
     color: #2c292d;
 
     --color-red: #ff6188;
@@ -13,11 +14,8 @@ body {
     font-family: -apple-system, "Segoe UI", system-ui, Roboto, Ubuntu, 'Helvetica Neue', Oxygen, Cantarell, Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'
 }
 
-h1, h2, h3 {
-}
-
 header {
-    max-width: 600px;
+    max-width: 700px;
     display: inline-block;
     padding: 80px 0 80px 100px;
 }
@@ -56,16 +54,13 @@ a {
     text-decoration: none;
 }
 
-a:hover {
+a:hover, .link {
     text-decoration: underline;
 }
 
 #index li {
     margin-bottom: .5em;
     
-}
-
-.navlink {
 }
 
 .links-hub a {
@@ -89,24 +84,6 @@ section {
 
 .education h2 {
     margin: 0;
-}
-
-
-h3 {
-    font-size: 1.222em;
-    font-weight: 700;
-}
-
-.half {
-    display: inline-block;
-    width: 49%;
-}
-
-.left {
-    float: left;
-}
-.right {
-    float: right;
 }
 
 .block {
@@ -152,16 +129,20 @@ article {
     border-color: #2c292d;
 }
 
-/* .card-body + .card-body {
-    border-top: 1px solid #fdf9f3; 
-} */
+.card-body {
+    padding: 0.5rem 1rem;
+}
 
-.card-img, .card-img-top {
-    border-bottom: 1px solid #fdf9f3;
+.card-body p {
+    margin-bottom: 1rem;
+}
+
+.card .tech {
+    margin-bottom: 1rem;
 }
 
 .card-title {
-    margin-top: 0;
+    margin-top: 0.5rem;
 }
 
 .projects {
@@ -175,6 +156,28 @@ footer {
     background: #2c292d;
     color: #fdf9f3;
     font-size: 0.85rem;
+}
+
+.sub-text {
+    font-size: 0.9rem;
+    margin-top: -0.5em;
+    margin-bottom: 1em;
+}
+
+.tech {
+    margin: 0;
+    padding: 0;
+}
+
+.tech li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 0.5rem;
+    font-size: 0.87rem;
+}
+
+.tech li:first-child {
+    margin-left: 0;
 }
 
 @media only screen and (max-width: 768px) {
@@ -192,9 +195,6 @@ footer {
         width: 100%;
     }
 
-    header h1 {
-        
-    }
     #indexWrapper {
         width: 100%;
         border: none;
